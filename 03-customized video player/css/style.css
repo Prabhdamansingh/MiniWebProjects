@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&family=Montserrat&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 24px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  margin: 0;
+  background-color: white;
+}
+.screen {
+  cursor: pointer;
+  width: 70%;
+  background-color: #e6e6fa !important;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 0px;
+}
+@media (max-width: 800px) {
+  .screen,
+  .controls {
+    width: 90%;
+  }
+}
+.control {
+  background-color: #e6e6fa;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-top: 0px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 70%;
+  padding: 10px;
+}
+.control .btn {
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: 0;
+}
+.control .fa-stop {
+  color: red;
+}
+.control .fa-play {
+  color: green;
+}
+.control .fa-pause {
+  color: yellowgreen;
+}
+.control .timestamp {
+  font-weight: bold;
+  margin-left: 10px;
+}
